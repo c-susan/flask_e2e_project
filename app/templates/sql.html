@@ -1,0 +1,29 @@
+{% extends "index.html" %} 
+
+{% block content %}
+    <div class="table mx-auto my-8">
+        <h2 class="text-xl bold-text center-text">Air Quality Data Dicitonary: Geographic Area ID</h2>
+        <br>
+        <p>This data dictionary references the geo_join_id column in the 'NYC Air Quality Data' dataset. Each geo_join_id references a geographic location name in NYC. </p>
+
+        <table class="table-auto center-text mx-auto my-8">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">Geo Join ID</th>
+                    <th class="px-4 py-2">Location Name</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for id in data2 %}
+                <tr>
+                    <td class="border px-4 py-2">{{ id.geo_id }}</td>
+                    <td class="border px-4 py-2">{{ id.location_name }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+<br/>
+
+{% endblock %}

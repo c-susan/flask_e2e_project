@@ -1,0 +1,40 @@
+.table-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-container .table {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.login-btn {
+    justify-content: center;
+    flex-direction: row;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    justify-content: center;
+    align-items: center;
+    width: 220px;
+    padding: 10px;
+    box-shadow: 3px 3px 3px rgb(170, 170, 170);
+    border-radius: 15px;
+}
+.btn-text {
+    justify-content: center;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+.right-align {
+    text-align: right;
+}

@@ -1,0 +1,47 @@
+{% extends "index.html" %} 
+
+{% block content %}
+    <div class="table">
+        <h2 class="text-xl center-text bold-text">Air Quality Data in NYC</h2>
+        <br>        
+        <p class="center-text">This dataset was taken from Data.gov. A sample of 50 reocrds are displayed.</p>
+        <p class="center-text bold-text">Link: https://catalog.data.gov/dataset/air-quality </p>
+        <br>        
+        <table class="table-auto">
+            <thead>
+                <tr>
+                    <th class="px-4 py-2">Unique ID</th>
+                    <th class="px-4 py-2">Indicator ID </th>
+                    <th class="px-4 py-2">Name</th>
+                    <th class="px-4 py-2">Measure</th>
+                    <th class="px-4 py-2">Measure Info</th>
+                    <th class="px-4 py-2">Geo Type Name</th>
+                    <th class="px-4 py-2">Geo Join ID</th>
+                    <th class="px-4 py-2">Geo Place Name</th>
+                    <th class="px-4 py-2">Time Period</th>
+                    <th class="px-4 py-2">Start Date</th>
+                    <th class="px-4 py-2">Data Value</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for data in data %}
+                <tr>
+                    <td class="border px-4 py-2">{{ data.unique_id }}</td>
+                    <td class="border px-4 py-2">{{ data.indicator_id }}</td>
+                    <td class="border px-4 py-2">{{ data.last_name }}</td>
+                    <td class="border px-4 py-2">{{ data.name }}</td>
+                    <td class="border px-4 py-2">{{ data.measure }}</td>
+                    <td class="border px-4 py-2">{{ data.measure_info }}</td>
+                    <td class="border px-4 py-2">{{ data.geo_type_name }}</td>
+                    <td class="border px-4 py-2">{{ data.geo_join_id }}</td>
+                    <td class="border px-4 py-2">{{ data.geo_place_name }}</td>
+                    <td class="border px-4 py-2">{{ data.time_period }}</td>
+                    <td class="border px-4 py-2">{{ data.start_date }}</td>
+                    <td class="border px-4 py-2">{{ data.data_value }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+{% endblock %}

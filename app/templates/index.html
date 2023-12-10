@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask</title>
+    
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+
+<body class="bg-gray-200">
+
+    <header class="bg-blue-600 text-white p-4">
+        <h1 class="text-2xl">Susan's Flask App</h1>
+        <nav>
+            <ul class="flex space-x-4">
+                <li><a href="/" class="hover:underline">Home</a></li>
+                <li><a href="/air" class="hover:underline">NYC Air Quality Data</a></li>
+                <li><a href="/sql" class="hover:underline">Data Dictionary</a></li>
+                <li><a href="/login" class="hover:underline">Log In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="p-4">
+        {% block content %}
+       This Flask App displays data on the air quality in NYC from  information. 
+       {% endblock %}
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4 mt-6">
+        <p>© 2023 Susan's Flask App. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

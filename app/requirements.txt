@@ -1,0 +1,10 @@
+flask 
+pandas
+SQLAlchemy
+python-dotenv
+Flask-Session
+gunicorn
+sqlalchemy
+authlib
+requests
+flask-sqlalchemy
