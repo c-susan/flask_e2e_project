@@ -24,20 +24,19 @@
                 </tr>
             </thead>
             <tbody>
-                {% for data in data %}
+                {% for data in data1 %}
                 <tr>
-                    <td class="border px-4 py-2">{{ data.unique_id }}</td>
-                    <td class="border px-4 py-2">{{ data.indicator_id }}</td>
-                    <td class="border px-4 py-2">{{ data.last_name }}</td>
-                    <td class="border px-4 py-2">{{ data.name }}</td>
-                    <td class="border px-4 py-2">{{ data.measure }}</td>
-                    <td class="border px-4 py-2">{{ data.measure_info }}</td>
-                    <td class="border px-4 py-2">{{ data.geo_type_name }}</td>
-                    <td class="border px-4 py-2">{{ data.geo_join_id }}</td>
-                    <td class="border px-4 py-2">{{ data.geo_place_name }}</td>
-                    <td class="border px-4 py-2">{{ data.time_period }}</td>
-                    <td class="border px-4 py-2">{{ data.start_date }}</td>
-                    <td class="border px-4 py-2">{{ data.data_value }}</td>
+                    <td class="border px-4 py-2">{{ data['unique_id'] }}</td>
+                    <td class="border px-4 py-2">{{ data['indicator_id'] }}</td>
+                    <td class="border px-4 py-2">{{ data['name'] }}</td>
+                    <td class="border px-4 py-2">{{ data['measure'] }}</td>
+                    <td class="border px-4 py-2">{{ data['measure_info'] }}</td>
+                    <td class="border px-4 py-2">{{ data['geo_type_name'] }}</td>
+                    <td class="border px-4 py-2">{{ data['geo_join_id'] }}</td>
+                    <td class="border px-4 py-2">{{ data['geo_place_name'] }}</td>
+                    <td class="border px-4 py-2">{{ data['time_period'] }}</td>
+                    <td class="border px-4 py-2">{{ data['start_date'] }}</td>
+                    <td class="border px-4 py-2">{{ data['data_value'] }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
