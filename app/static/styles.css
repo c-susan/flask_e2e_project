@@ -51,11 +51,3 @@
 .image-container {
     flex: 1;
 }
-
-/flask_e2e_project
-    /static
-        /images
-            column_info.jpeg
-    /templates
-        sql.html
-    app.py
