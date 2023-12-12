@@ -1,15 +1,21 @@
 {% extends "index.html" %} 
 
 {% block content %}
-    <div class="table mx-auto my-8">
-        <h2 class="text-xl bold-text center-text">Air Quality Data Dicitonary: Geographic Area ID</h2>
+    <h2 class="text-xl bold-text center-text mx-auto my-8">NYC Air Quality Data Dicitonary</h2>
+    <div class="flex-container">
+    <div class="table table-flex">
+        <p>The following table references the 'geo_join_id', 'geo_type_name', and 'geo_place_name'
         <br>
-        <p>This data dictionary references the geo_join_id column in the 'NYC Air Quality Data' dataset. Each geo_join_id references a geographic location name in NYC. </p>
+        columns in the 'NYC Air Quality Data' dataset. Each ID in the column 'Geo Join ID'  
+        <br>
+        references a geographic location name in NYC, shown in the 'Location Name' column.  </p>
+        <br>
 
-        <table class="table-auto center-text mx-auto my-8">
+        <table class="table-auto center-text">
             <thead>
                 <tr>
                     <th class="px-4 py-2">Geo Join ID</th>
+                    <th class="px-4 py-2">Geography Type</th>
                     <th class="px-4 py-2">Location Name</th>
                 </tr>
             </thead>
@@ -17,12 +23,28 @@
                 {% for id in data2 %}
                 <tr>
                     <td class="border px-4 py-2">{{ id.geo_id }}</td>
-                    <td class="border px-4 py-2">{{ id.location_name }}</td>
+                    <td class="border px-4 py-2">{{ id.geo_type_name }}</td>
+                    <td class="border px-4 py-2">{{ id.geo_place_name }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
         </table>
     </div>
+    <div class="image-container">
+    <br>
+    <br>
+    <h2 class="bold-text"> Dataset Column Information</h2>
+    <br>
+        <p>The following image provides information on the meaning of each column name in the dataset. 
+        <br>
+        Information taken from: https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r 
+        </p>
+        <br>    
+            <img src="file:///home/susan_chen/flask_e2e_project/docs/column%20info.png" alt="table column information">
+        </div>
+    </div>
+
+    <br/>
 
 <br/>
 

@@ -38,3 +38,16 @@
 .right-align {
     text-align: right;
 }
+
+.flex-container {
+    display: flex;
+}
+
+.table-flex {
+    flex: 1;
+    margin-right: 20px; /* Adjust margin as needed */
+}
+
+.image-container {
+    flex: 1;
+}
