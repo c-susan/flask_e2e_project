@@ -1,5 +1,5 @@
 # Sets a pre-built package/base image for the Docker image
-FROM python:3.7-alpine  
+FROM python:3.10-slim-buster  
 # Creates a new folder called 'app' and makes it the working directory inside the container
 WORKDIR /app
 # Copies everything on the current directory onto the 'app' directory inside the container
