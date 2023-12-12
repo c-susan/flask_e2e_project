@@ -9,7 +9,7 @@ from authlib.common.security import generate_token
 from oauth.db_functions import update_or_create_user
 from flask_session import Session
 import sentry_sdk
-from flask import Flask
+import tablib
 
 sentry_sdk.init(
     dsn="https://826f9a57f816daf5c766b02699963c0c@o4504980167524352.ingest.sentry.io/4506373742657536",
@@ -55,11 +55,10 @@ oauth = OAuth(app)
 def index():
     return render_template('index.html')
 
-
 @app.route('/air')
 def air():
-    df = pd.read_csv('/home/susan_chen/flask_e2e_project/data/cleaned_air_quality.csv')
-    data = df.sample(50)
+    df = pd.read_csv('/home/susan_chen/flask_e2e_project/data/cleaned_air_quality.csv').sample(50)
+    data = df.values
     return render_template('air.html', data=data)
 
 

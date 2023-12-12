@@ -2,12 +2,12 @@
 
 {% block content %}
     <div class="table">
+        <br>        
+        <br>   
+        
         <h2 class="text-xl center-text bold-text">Air Quality Data in NYC</h2>
-        <br>        
-        <p class="center-text">This dataset was taken from Data.gov. A sample of 50 reocrds are displayed.</p>
-        <p class="center-text bold-text">Link: https://catalog.data.gov/dataset/air-quality </p>
-        <br>        
-        <table class="table-auto">
+     
+        <table class="table-auto center-text mx-auto my-8">
             <thead>
                 <tr>
                     <th class="px-4 py-2">Unique ID</th>
@@ -24,19 +24,19 @@
                 </tr>
             </thead>
             <tbody>
-                {% for data in data1 %}
+                {% for value in data %}
                 <tr>
-                    <td class="border px-4 py-2">{{ data['unique_id'] }}</td>
-                    <td class="border px-4 py-2">{{ data['indicator_id'] }}</td>
-                    <td class="border px-4 py-2">{{ data['name'] }}</td>
-                    <td class="border px-4 py-2">{{ data['measure'] }}</td>
-                    <td class="border px-4 py-2">{{ data['measure_info'] }}</td>
-                    <td class="border px-4 py-2">{{ data['geo_type_name'] }}</td>
-                    <td class="border px-4 py-2">{{ data['geo_join_id'] }}</td>
-                    <td class="border px-4 py-2">{{ data['geo_place_name'] }}</td>
-                    <td class="border px-4 py-2">{{ data['time_period'] }}</td>
-                    <td class="border px-4 py-2">{{ data['start_date'] }}</td>
-                    <td class="border px-4 py-2">{{ data['data_value'] }}</td>
+                    <td class="border px-4 py-2">{{ value[0] }}</td>
+                    <td class="border px-4 py-2">{{ value[1] }}</td>
+                    <td class="border px-4 py-2">{{ value[2] }}</td>
+                    <td class="border px-4 py-2">{{ value[3] }}</td>
+                    <td class="border px-4 py-2">{{ value[4] }}</td>
+                    <td class="border px-4 py-2">{{ value[5] }}</td>
+                    <td class="border px-4 py-2">{{ value[6] }}</td>
+                    <td class="border px-4 py-2">{{ value[7] }}</td>
+                    <td class="border px-4 py-2">{{ value[8] }}</td>
+                    <td class="border px-4 py-2">{{ value[9] }}</td>
+                    <td class="border px-4 py-2">{{ value[10] }}</td>
                 </tr>
                 {% endfor %}
             </tbody>

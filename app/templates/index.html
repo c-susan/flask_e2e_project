@@ -28,7 +28,37 @@
 
     <main class="p-4">
         {% block content %}
-       This Flask App displays data on the air quality in NYC from  information. 
+        <h1 class= "center-text mx-auto my-8 bold-text text-xl">Welcome!</h1>        
+        <p>This product displays data on the air quality in NYC from  information. The data is taken from Data.gov and contains information such as indicator/pollutant name, 
+            <br>
+            their unit of measurement, geographica location it was measured at, and the date the data applies too. A sample of 50 records from the cleaned dataset are displayed for easier viewing. 
+        </p>
+        <p class="bold-text">
+            <br>
+            Link to dataset: https://catalog.data.gov/dataset/air-quality
+        </p>
+        <br>
+        <br>
+        <h3 class= "bold-text center-text">
+            Refer to the links in the menu above to view the data, data dictionary, or login to add changes to the dataset.
+        <h3>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <h3 class="bold-text text-l">
+            References:
+        </h3>
+        <p>
+            Data.gov. (2023, November 3). <i>Air quality.</i> https://catalog.data.gov/dataset/air-quality
+            <br>
+            NYC Open Data. (2023, November 2). <i>Air quality.</i> https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r
+        </p>
+        <br>
+        <br>
+        <br>
        {% endblock %}
     </main>
 
