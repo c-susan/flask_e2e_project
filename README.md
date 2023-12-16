@@ -9,4 +9,6 @@ This repo contains the final project for the course HHA 504: Cloud Computing Hea
 + **data** folder: contains the dataset used in the application
 + **db** folder: contains the SQL database code for creating a table and inserting values
 + **docs** folder: contains screenshots of the application and a README.md file with an overview of the project and application
-+ **logs** folder: contains logs from Sentry.io exported in json format in addition a screenshots of several of the issues logged on sentry. 
++ **logs** folder: contains logs from Sentry.io exported in json format in addition a screenshots of several of the issues logged on sentry.
+
+The [README.md](https://github.com/c-susan/flask_e2e_project/tree/main/docs) file located in the docs tab inludes the documentation for this repo. 
