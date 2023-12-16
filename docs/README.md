@@ -86,30 +86,6 @@ GOOGLE_CLIENT_SECRET = <client-secret>
 ## Documentation of Screenshots
 This section contains a brief explanation of the screenshots included in this README.md file and the docs folder of the repo. 
 
-### Screenshots of the Flask web application
-Includes screenshots of each of the tabs in the application. 
-
-#### Home Page:
-<img width="600" alt="home:index_tab" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/fbf7fb78-4f6d-4447-a472-1bc1a892cb6d">
-
-#### Data Tab:
-<img width="600" alt="data_tab" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/837bae49-5ccc-43aa-9dcc-b705d583a85b">
-
-#### Data Dictionary Tab:
-<img width="600" alt="data_dict_tab" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/10839eb7-a8f4-4792-9753-14b3e556bdc1">
-
-#### Log-in Tab/Google OAuth:
-<img width="600" alt="login_tab" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/096ed205-d0de-4991-adac-155302cfd7dd">
-
-#### Log-in Account Dashboard 
-This snapshot shows the dashboard page when the user is authenticated through Google Oauth: 
-<img width="600" alt="account" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/1ef43aac-6d14-4f4b-9969-5fa99814f456">
-
-### Data Dictionary
-This image of the data dictionary for the NYC Air Quality dataset was included in the 'Data Dictionary' tab of the application. It was taken from: [NYC Open Data](https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r).
-
-<img width="400" alt="column-info" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/4c84b063-436b-479d-9507-808731a15895">
-
 ### Azure App Services Menu
 This is an example of what the Azure App Serives menu looks like with the created web application: 
 
@@ -131,4 +107,29 @@ The is the output shown when the web application is created and deployed using A
 This image shows what it looks like when the application is deployed using Docker. 
 
 <img width="600" alt="Docker" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/a75e8f32-8998-4b93-a7f1-17a367761177">
+
+### Data Dictionary
+This image of the data dictionary for the NYC Air Quality dataset was included in the 'Data Dictionary' tab of the application. It was taken from: [NYC Open Data](https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r).
+
+<img width="400" alt="column-info" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/4c84b063-436b-479d-9507-808731a15895">
+
+
+### Screenshots of the Flask web application
+Includes screenshots of each of the tabs in the application. 
+
+#### Home Page:
+<img width="600" alt="home:index_tab" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/fbf7fb78-4f6d-4447-a472-1bc1a892cb6d">
+
+#### Data Tab:
+<img width="600" alt="data_tab" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/837bae49-5ccc-43aa-9dcc-b705d583a85b">
+
+#### Data Dictionary Tab:
+<img width="600" alt="data_dict_tab" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/10839eb7-a8f4-4792-9753-14b3e556bdc1">
+
+#### Log-in Tab/Google OAuth:
+<img width="600" alt="login_tab" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/096ed205-d0de-4991-adac-155302cfd7dd">
+
+#### Log-in Account Dashboard 
+This snapshot shows the dashboard page when the user is authenticated through Google Oauth: 
+<img width="600" alt="account" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/1ef43aac-6d14-4f4b-9969-5fa99814f456">
 
