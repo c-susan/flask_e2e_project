@@ -105,7 +105,30 @@ Includes screenshots of each of the tabs in the application.
 This snapshot shows the dashboard page when the user is authenticated through Google Oauth: 
 <img width="600" alt="account" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/1ef43aac-6d14-4f4b-9969-5fa99814f456">
 
-#### Data Dictionary
+### Data Dictionary
 This image of the data dictionary for the NYC Air Quality dataset was included in the 'Data Dictionary' tab of the application. It was taken from: [NYC Open Data](https://data.cityofnewyork.us/Environment/Air-Quality/c3uy-2p5r).
 
-<img width="600" alt="column-info" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/4c84b063-436b-479d-9507-808731a15895">
+<img width="400" alt="column-info" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/4c84b063-436b-479d-9507-808731a15895">
+
+### Azure App Services Menu
+This is an example of what the Azure App Serives menu looks like with the created web application: 
+
+<img width="600" alt="azure_app_services_menu" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/5489aa50-d506-4319-9789-6d4ac3395817">
+
+### Azure CLI
+The screenshot shows a successful installation of Azure CLI when the ```az``` command is run: 
+
+<img width="350" alt="azure_cli" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/adfabab5-5747-4322-993f-132f364cfb51">
+
+
+### Azure Cloud Deployment
+The is the output shown when the web application is created and deployed using Azure when the follwing command is run: ```az webapp up --resource-group <resource-group> --name <app-name> --runtime PYTHON:3.9 --sku B1```:
+
+<img width="600" alt="cloud_deployment" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/2f67fa96-6d8f-44d1-b349-ec7055798256">
+
+
+### Docker
+This image shows what it looks like when the application is deployed using Docker. 
+
+<img width="600" alt="Docker" src="https://github.com/c-susan/flask_e2e_project/assets/123512714/a75e8f32-8998-4b93-a7f1-17a367761177">
+
