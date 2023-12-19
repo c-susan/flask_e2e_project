@@ -1,5 +1,33 @@
-INSERT INTO geo_area_id(geo_id, geo_type_name, geo_place_name)
-VALUES
+from sqlalchemy import create_engine, func
+from sqlalchemy.orm import sessionmaker
+from create_table import geo_area_id
+import os
+import random 
+from dotenv import load_dotenv
+
+load_dotenv()
+
+## Database credentials 
+DB_HOST = os.getenv("DB_HOST")
+DB_DATABASE = os.getenv("DB_DATABASE")
+DB_USERNAME = os.getenv("DB_USERNAME")
+DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_PORT = int(os.getenv("DB_PORT", 3306))
+DB_CHARSET = os.getenv("DB_CHARSET", "utf8mb4")
+
+# Connection string and creating the engine 
+connect_args={'ssl':{'fake_flag_to_enable_tls': True}}
+connection_string = (f'mysql+pymysql://{DB_USERNAME}:{DB_PASSWORD}@{DB_HOST}:{DB_PORT}/{DB_DATABASE}'
+                    f"?charset={DB_CHARSET}")
+engine = create_engine(
+        connection_string,
+        connect_args=connect_args)
+
+# Creating a session to populate the data
+Session = sessionmaker(bind=engine)
+session = Session()
+
+values = [
 (1, "Borough", "Bronx"),
 (1, "Borough", "New York City"),
 (1, "Citywide", "Bronx"),
@@ -251,4 +279,19 @@ VALUES
 (404406, "UHF34", "Bayside Little Neck-Fresh Meadows"),
 (501502, "UHF34", "Northern SI"),
 (503504, "UHF34", "Southern SI"),
-(105106107, "UHF34", "South Bronx");
+(105106107, "UHF34", "South Bronx"),]
+
+for geo_id, geo_type_name, geo_place_name in values:
+    geo_area = geo_area_id(
+        geo_id=geo_id,
+        geo_type_name=geo_type_name,
+        geo_place_name=geo_place_name
+    )
+    session.add(geo_area)
+
+
+# Commit the changes to the database
+session.commit()
+
+# Close the session
+session.close()
