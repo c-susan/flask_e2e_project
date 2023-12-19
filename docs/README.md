@@ -17,16 +17,16 @@ This repo contains the final project for the course HHA 504: Cloud Computing Hea
 
 ## Technologies Used
 The tools and services used in this project include the following: 
-1. Github - to version control the scripts 
-2. Environment variables (.env) - to contain the credentials for Google OAuth and database connection strings for MySQL connection
-3. Flask - the backend framework used in the web-service project to create a Flask app
-4. Tailwind - the frontend framework for the web-service design
-5. Azure Database for MySQL flexible server - database used in the project to include data into the Flask app
-6. SQLAlchemy - the ORM used in the Flask app to create a connection with the MySQL database and query data.
-7. Google OAuth - the authorization service used in the project to create a simple user authorization in the Flask app
-8. Sentry.io - the logger service used in the project to log any issues in the web-service app
-9. Docker - Docker was incorporated into the project to containerize the Flask app 
-10. Cloud Deployment with Azure - the Flask app was deployed to the cloud using Microsoft Azure's App Services as another way of deploying the web application
+1. Github - used to version control the scripts and codes for the project. 
+2. Environment variables (.env) - used to contain the credentials for Google OAuth and the database connection strings for MySQL connection. The .env file is contained in the .gitignore file to so it was not commited to the repo. 
+3. Flask - the backend framework used to create the web-service (Flask) application for this project. 
+4. Tailwind - the frontend framework used to design the look of each of the pages in the Flask application. 
+5. Azure Database for MySQL flexible server - the database used in the project to include data in the Flask app was created using Microsoft Azure Database for MySQL flexible server. 
+6. SQLAlchemy - used to create the table and insert data into the database. It was additionally for the migrations included in the [db](https://github.com/c-susan/flask_e2e_project/tree/main/db) folder. 
+7. Google OAuth - the authorization service used in the project to create a simple user authorization in the Flask app. Google OAuth would authenticate the user as they sign into their google account. 
+8. Sentry.io - the logger service used in the project to log any issues the occurred in the Flask app.
+9. Docker - Docker was incorporated into the project to containerize the Flask app as another way to deploy the application. 
+10. Cloud Deployment with Azure - the Flask app was deployed to the cloud using Microsoft Azure's App Services as another way of deploying the web application in addition to deploying locally and using Docker. 
 
 ## Steps to Running the Web-Service
 The Flask web application can be deployed in 3 different ways: locally, using Docker, and cloud deployment with Azure. The following includes steps on how to run the application for each of the deployment ways. 
